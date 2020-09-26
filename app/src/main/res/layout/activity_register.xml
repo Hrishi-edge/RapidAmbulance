@@ -1,36 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cb"
+    android:padding="12dp"
     tools:context=".RegisterActivity">
 
-    <com.github.florent37.shapeofview.shapes.DiagonalView
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:padding="14dp"
-        app:shape_diagonal_angle="10"
-        app:shape_diagonal_direction="right"
-        app:shape_diagonal_position="bottom"
-        >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:padding="8dp"
+                android:textColor="#5CEFEF"
+                android:text="Enter Your Name"
+
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="#5CEFEF"
+
+                android:text="Enter Your Email"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:padding="8dp"
+                android:text="Enter Password"
+                android:textColor="#5CEFEF"
+
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:inputType="textPassword"
+
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:padding="8dp"
+                android:text="Confirm Password"
+                android:textColor="#5CEFEF"
+
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:inputType="textPassword"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/white"
+                app:cornerRadius="8dp"
+                android:text="Register"
+                android:backgroundTint="#6EBBE4"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Your Name"
-        android:textColor="#F8735D"
-        />
-
-</LinearLayout>
-
-    </com.github.florent37.shapeofview.shapes.DiagonalView>
-
+        android:layout_below="@+id/card"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cantata_one"
+        android:text="Already a member? Sign In"
+        android:textAlignment="center"
+        android:textColor="#FB0606"
+        android:textSize="14sp" />
 </RelativeLayout>
