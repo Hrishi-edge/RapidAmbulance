@@ -8,7 +8,7 @@
     tools:context=".RegisterActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -27,41 +27,48 @@
         app:layout_constraintVertical_bias="0.102" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName14"
+        android:id="@+id/enterEmailAdress"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="     Enter email adress"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColorHint="#673AB7"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterUserName" />
 
     <EditText
         android:id="@+id/enterUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="         Enter Username"
         android:inputType="textPersonName"
         android:textColorHint="#4D219C"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/Register" />
 
     <EditText
-        android:id="@+id/enterEmailAdress"
+        android:id="@+id/enterConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
-        android:hint="     Enter email adress"
+        android:hint="Enter confirm Password"
         android:inputType="textPersonName"
         android:textColorHint="#673AB7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
 
     <EditText
         android:id="@+id/enterPassword"
@@ -77,17 +84,14 @@
         app:layout_constraintTop_toBottomOf="@+id/enterEmailAdress" />
 
     <EditText
-        android:id="@+id/enterConfirmPassword"
+        android:id="@+id/editTextTextPersonName14"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
         android:ems="10"
-        android:hint="Enter confirm Password"
         android:inputType="textPersonName"
-        android:textColorHint="#673AB7"
+        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+        tools:layout_editor_absoluteY="351dp" />
 
     <Button
         android:id="@+id/SignUp"
