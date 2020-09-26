@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "178134373884",
+    "firebase_url": "https://rapid-ambulnace.firebaseio.com",
+    "project_id": "rapid-ambulnace",
+    "storage_bucket": "rapid-ambulnace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178134373884:android:098dab9af4997028774e79",
+        "android_client_info": {
+          "package_name": "com.example.rapidambulnace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178134373884-n4qob50shdfcccmm5rlecber40sse22r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCAClWFA0084j3s_4jY9Z1-kIZ0rVurLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178134373884-n4qob50shdfcccmm5rlecber40sse22r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
